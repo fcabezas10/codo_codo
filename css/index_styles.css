@@ -1,0 +1,142 @@
+
+.newSection{
+    margin-top: 20px;
+}
+
+.codo-a-codoLogo{
+    width: 120px;
+    height: auto;
+}
+
+#navigationBar{
+    color: white;
+}
+
+#titleBar{
+    font-weight: bold;
+}
+
+#leftBar{
+    padding-left: 10%;
+}
+
+#rightBar{
+    display: flex;
+    justify-content: end;
+    padding-right: 10%;
+
+}
+#introInformation{
+    color: white;
+    text-align: right;
+
+}
+
+#bannerBox{
+    background-image: linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0, 0.5));
+    background-repeat: no-repeat;
+    overflow: auto;
+}
+
+#banner-col2{
+    align-items: center;
+    margin-right: 100px;
+}
+
+#btn-buy-tickets{
+    background-color: rgb(40,167,70);
+}
+
+#imageBackground{
+    background: url(../img/ba1.jpg);
+    background-repeat: no-repeat;
+    height: 800px;
+}
+
+#container-title-top{
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+.titlePart-1{
+    font-size: x-small;
+    margin-bottom:0rem;
+    margin-top: 1%;
+}
+.titlePart-2{
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.speakers{
+    font-weight: bold;
+}
+
+
+#container-cards-speakers{
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+#honoluluImg{
+    width:100%;
+    height: 100%;
+}
+
+
+#container-form-speakers{
+    width: 100%; 
+    padding-left: 25%;
+    padding-right: 25%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#form-comment{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+    
+#floatingTextArea{
+        height: 200px;
+}
+
+.underline {
+    border-bottom:1px dotted #a2a2d1;
+}
+    
+#btn-send{
+    background-color: rgb(150,200,62);
+    border: none;
+    font-size: large;
+    height: 50px;
+    font-weight: bold;
+}
+
+#footer-bottom{
+    width: 100%;
+    background-color: rgb(27, 66, 87);
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    align-items: center;
+    font-size:large;
+    color: white;
+}
+
+#footerText{
+    color: white;
+    font-weight: normal;
+
+}
+.flex-container {
+    display: block;
+    flex-direction: row;
+    justify-content: space-between;    
+}
