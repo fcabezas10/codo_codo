@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <meta name="author" content="Facundo Cabezas!">
+
+    <link rel="stylesheet" href="css/index_styles.css">
+    <title>Comprar tickets</title>
+</head>
+<body>
+
+    <!--Navbar-->
+        
+            <nav class="navbar navbar-expand-lg bg-dark" id="navigationBar">
+                <div class="flex-container">
+                </div class="row-cols-1">
+                    <div class="col-4" id="leftBar">
+                        <img class="codo-a-codoLogo" src="./img/codoacodo.png"
+                        class="d-inline-block align-text-center"><span id="titleBar">Conf. Bs As</span>               
+                    </div>
+                    <div class="col-8" id="rightBar">
+                        <div>
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item"><a class="nav-link text-light" href="#">La Conferencia</a></li>
+                                <li class="nav-item"><a class="nav-link text-light" href="#">Los Oradores</a></li>
+                                <li class="nav-item"><a class="nav-link text-light" href="#">El lugar y la fecha</a></li>
+                                <li class="nav-item"><a class="nav-link text-light" href="tp_index.html">Conviertete en Orador</a></li>
+                                <li class="nav-item"><a class="nav-link text-success" href="#">Comprar tickets</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </nav>
+
+    <!--Seccion Info tickets-->
+    <section class="newSection">
+        <div class="flex-container" id="ticketsInfoOption">
+            <div class="row">             
+                <div class="col-sm" id="estudiateStyle">
+                       <p>Estudiante</p>
+                       Tienen un descuento
+                       <p id="pBold">80%</p>
+                       <span>* presentar documentacion</span> 
+                 </div>
+
+                 <div class="col-sm" id="traineeStyle">
+                    <p>Trainee</p>
+                    Tienen un descuento
+                    <p id="pBold">50%</p>
+                    <span>* presentar documentacion</span> 
+                </div>
+
+                <div class="col-sm" id="juniorStyle">
+                    <p>Junior</p>
+                    Tienen un descuento
+                    <p id="pBold">15%</p>
+                    <span>* presentar documentacion</span> 
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Seccion tickets-->
+
+    <section class="newSection">
+        <!--titulo-->
+        <div id="container-title-top" class="container">
+            <p class="titlePart-1">venta</p>
+            <p class="titlePart-2">valor de tickets $200</p>
+        </div>
+
+        <!--Formulario tickets-->
+        <div class="formStyle">
+            <div class="grid" id="container-form-speakers">
+                <form class="container" action="#" method="post"  enctype="text/plain">
+                <div class="row">
+                    <div class="col-md">
+                        <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                    </div>
+                    <div class="col-md">
+                        <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                    </div>
+                </div>
+                <div class="row" id="formMargin">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Correo" aria-label="Correo">
+                    </div>
+                </div>
+                <div class="row" id="formMargin">
+                    <div class="col-md">
+                        Cantidad
+                    </div>
+                    <div class="col-md">
+                        Categoria
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <input type="text" class="form-control" placeholder="Cantidad" aria-label="Cantidad" id="ticketCountID">
+                    </div>
+                    <div class="col-md">
+                        <select class="form-select" aria-label="Estudiante" id="ticketTypeID">
+                            <option value="Estudiante">Estudiante</option>
+                            <option value="Trainee">Trainee</option>
+                            <option value="Junior">Junior</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="totalValueInfo">
+                    <label>Total a pagar:$</label>
+                    <label id="totalValue"></label>
+                </div>  
+                <div class="row g-2" id="formMargin">
+                    <div class="col-md">
+                        <button class="btn btn-success" type="reset" id="btn-ticket" onclick="deleteValues()">Borrar</button>
+                    </div>
+                    <div class="col-md">
+                        <button class="btn btn-success" type="button" id="btn-ticket" onclick="showDiscount()">Resumen</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        </div>
+    </section>
+
+    <!-- footer-->
+    <footer class="newSection">
+        <div id="footer-bottom" class="nav nav-pills nav-justified flex-column flex-sm-row">
+            <a class="nav-link" id="footerText" href="#">Preguntas frecuentes</a>
+            <a class="nav-link" id="footerText" href="#">Contáctanos</a>
+            <a class="nav-link" id="footerText" href="#">Prensa</a>
+            <a class="nav-link" id="footerText" href="#">Conferencias</a>
+            <a class="nav-link" id="footerText" href="#">Términos y condiciones</a>
+            <a class="nav-link" id="footerText" href="#">Privacidad</a>
+            <a class="nav-link" id="footerText" href="#">Estudiantes</a>
+        </div>
+    </footer>
+
+</body>
+    <script src="js/index_js.js"></script> 
+</html>
